@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+
+
+
+    <title>one calculation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container ">
+            <a href="#" class="navbar-brand">Tous les comptes en un</a>
+
+
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="Nom" class="form-control" id="productname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="Prix" class="form-control" id="productprice">
+                        </div>
+
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary btn-sm  addBtn" id="Addbtn">
+                    <i class="fas fa-plus"></i>
+                    Ajouter</button>
+                    <button type="submit" class="btn btn-warning btn-sm updatebtn" >
+                        <i class="fas fa-edit"></i>
+                        Enregistrer</button>
+                        <button type="submit" class="btn btn-danger btn-sm deletebtn">
+                            <i class="fas fa-times"></i>
+                            
+                            Supprimer</button>
+                            <button type="submit" class="btn btn-secondary btn-sm cancelbtn" >
+                                <i class="fas fa-arrow-circle-left"></i>
+                                Annuler</button>
+
+            </div>
+        </div>
+        <div id="product-card" class="card mt-3" >
+            <table class="table">
+                <tbody id="item-list">
+                  
+                </tbody>
+
+            </table>
+
+        </div>
+        <div class="card mt-3">
+            <div class="card-footer text-right">
+                <p>Total (Tl) <strong id="total-tl"> <span> 1200</span></strong></p>
+                <P>Total ($) <strong> <span id="total-dolar"> 300</span></strong></P>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
